@@ -1,0 +1,40 @@
+{
+    "fields": [
+      {
+        "fieldName": "orderNumber",
+        "fieldType": "String",
+        "fieldReadOnly": true
+      },
+      {
+        "fieldName": "date",
+        "fieldType": "LocalDate",
+        "fieldReadOnly": true
+      },
+      {
+        "fieldName": "menuName",
+        "fieldType": "String",
+        "fieldReadOnly": true
+      }
+    ],
+    "relationships": [
+      {
+        "relationshipName": "menu",
+        "otherEntityName": "menu",
+        "relationshipType": "many-to-one",
+        "otherEntityField": "name"
+      }
+    ],
+    "entityType": "user-task-form",
+    "processBpmnId": "OrderProcess",
+    "processEntityName": "OrderProcess",
+    "taskBpmnId": "TaskMenu",
+    "domainEntityName": "Order",
+    "service": "serviceClass",
+    "dto": "mapstruct",
+    "jpaMetamodelFiltering": false,
+    "readOnly": false,
+    "pagination": "no",
+    "skipFakeData": true,
+    "name": "TaskMenu",
+    "changelogDate": "20210401000004"
+  }

@@ -1,0 +1,37 @@
+{
+    "fields": [
+      {
+        "fieldName": "orderNumber",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "userName",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "userEmail",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "date",
+        "fieldType": "LocalDate"
+      },
+      {
+        "fieldName": "menuName",
+        "fieldType": "String"
+      }
+    ],
+    "relationships": [],
+    "entityType": "start-form",
+    "processBpmnId": "OrderProcess",
+    "processEntityName": "OrderProcess",
+    "domainEntityName": "Order",
+    "service": "serviceClass",
+    "dto": "mapstruct",
+    "jpaMetamodelFiltering": false,
+    "readOnly": false,
+    "pagination": "no",
+    "name": "OrderStartForm",
+    "changelogDate": "20210401000002",
+    "skipFakeData": true
+  }

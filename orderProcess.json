@@ -1,0 +1,49 @@
+{
+    "fields": [
+      {
+        "fieldName": "orderNumber",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "date",
+        "fieldType": "LocalDate"
+      },
+      {
+        "fieldName": "menuName",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "addressName",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "total",
+        "fieldType": "Float"
+      }
+    ],
+    "relationships": [
+      {
+        "relationshipName": "menu",
+        "otherEntityName": "menu",
+        "relationshipType": "many-to-one",
+        "otherEntityField": "name"
+      },
+      {
+        "relationshipName": "address",
+        "otherEntityName": "address",
+        "relationshipType": "many-to-one",
+        "otherEntityField": "name"
+      }
+    ],
+    "entityType": "process-binding",
+    "processBpmnId": "OrderProcess",
+    "domainEntityName": "Order",
+    "service": "serviceClass",
+    "dto": "mapstruct",
+    "jpaMetamodelFiltering": false,
+    "readOnly": false,
+    "pagination": "no",
+    "name": "OrderProcess",
+    "changelogDate": "20210401000002",
+    "skipFakeData": true
+  }

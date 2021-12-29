@@ -1,0 +1,38 @@
+{
+    "fields": [
+      {
+        "fieldName": "name",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "address",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "address2",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "city",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "postcode",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "country",
+        "fieldType": "String"
+      }
+    ],
+    "relationships": [],
+    "entityType": "domain",
+    "service": "serviceClass",
+    "dto": "mapstruct",
+    "jpaMetamodelFiltering": false,
+    "readOnly": false,
+    "pagination": "no",
+    "name": "Address",
+    "changelogDate": "20211109000002",
+    "skipFakeData": true
+  }

@@ -1,0 +1,55 @@
+{
+    "fields": [
+      {
+        "fieldName": "orderNumber",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "userName",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "userEmail",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "date",
+        "fieldType": "LocalDate"
+      },
+      {
+        "fieldName": "menuName",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "addressName",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "price",
+        "fieldType": "Double"
+      }
+    ],
+    "relationships": [
+      {
+        "relationshipName": "menu",
+        "otherEntityName": "menu",
+        "relationshipType": "many-to-one",
+        "otherEntityField": "name"
+      },
+      {
+        "relationshipName": "address",
+        "otherEntityName": "address",
+        "relationshipType": "many-to-one",
+        "otherEntityField": "name"
+      }
+    ],
+    "entityType": "domain",
+    "service": "serviceClass",
+    "dto": "mapstruct",
+    "jpaMetamodelFiltering": false,
+    "readOnly": true,
+    "pagination": "no",
+    "name": "Order",
+    "changelogDate": "20210401000001",
+    "skipFakeData": true
+  }
